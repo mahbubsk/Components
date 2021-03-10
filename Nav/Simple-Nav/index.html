@@ -4,9 +4,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Simple Nav</title>
 </head>
 <body>
-    
+    <main class="wrap">
+        <nav class="navbar">
+            <div class="navbar__brand-logo">
+                <img src="" title="this is the brand logo of this comapnay" alt="brand logo" class="navbar__brand-img">
+                <a href="" class="navbar__brand-link">Navbar</a>
+            </div>
+            <ul class="navbar__nav-items">
+                <li class="navbar__nav-item active">
+                    <a href="#" class="navbar__nav-link">Item 1</a>
+                </li>
+                <li class="navbar__nav-item">
+                    <a href="#" class="navbar__nav-link">Item 2</a>
+                </li>
+                <li class="navbar__nav-item">
+                    <a href="#" class="navbar__nav-link">Item 3</a>
+                </li>
+                <li class="navbar__nav-item">
+                    <a href="#" class="navbar__nav-link">Item 4</a>
+                </li>
+                <li class="navbar__nav-item">
+                    <a href="#" class="navbar__nav-link">
+                        Item 5 ^
+                        <ul class="navbar__dropdown-items">
+                            <li class="navbar__dropdown-item">dropdown item 1</li>
+                            <li class="navbar__dropdown-item">dropdown item 2</li>
+                            <li class="navbar__dropdown-item">dropdown item 3</li>
+                            <li class="navbar__dropdown-item">dropdown item 4</li>
+                        </ul>
+                    </a>
+                </li>
+                <li class="navbar__nav-item">
+                    <a href="#" class="navbar__nav-link">
+                        Item 6
+                        <ul class="navbar__dropdown-items">
+                            <li class="navbar__dropdown-item">dropdown item 1</li>
+                            <li class="navbar__dropdown-item">dropdown item 2</li>
+                            <li class="navbar__dropdown-item">dropdown item 3</li>
+                            <li class="navbar__dropdown-item">dropdown item 4</li>
+                        </ul>
+                    </a>
+                </li>
+                <li class="navbar__nav-item">
+                    <a href="#" class="navbar__nav-link">Item 7</a>
+                </li>
+                <li class="navbar__nav-item">
+                    <a href="#" class="navbar__nav-link">Item 8</a>
+                </li>
+                <li class="navbar__nav-item">
+                    <a href="#" class="navbar__nav-link">Item 9</a>
+                </li>
+                <li class="navbar__nav-item">
+                    <a href="#" class="navbar__nav-link">Item 10</a>
+                </li>
+            </ul>  
+            
+            <div class="navbar__profile">
+                <img src="#" alt="navbar profile image" class="navbar__prifile-img">
+                <button class="navbar__sign-in-btn">sing in</button>
+            </div>
+        </nav>
+    </main>
 </body>
 </html>

@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+body{
+    min-height:100vh;
+    background:#150019;
+}
+
+.sidenav{
+    width:3.3rem;
+    height:100vh;
+    background:#3e0748;
+    transition:.5s;
+    overflow:scroll;
+    margin-top:3.3rem;
+    float:left;
+}
+.sidenav::-webkit-scrollbar{
+    display:none;
+}
+.sidenav.active{
+    width:15rem;
+}
+
+.sidenav__items{
+    width:100%;
+    color:#fff;
+}
+
+.sidenav__item{
+    position:relative;
+    width:100%;
+    list-style-type:none;
+}
+.sidenav__item:hover{
+    background:#ea1d63;
+}
+
+.sidenav__link{
+    position:relative;
+    display:block;
+    width:100%;
+    display:flex;
+    align-items:center;
+    text-decoration:none;
+    color:#fff;
+
+}
+
+.sidenav__icon{
+    position:relative;
+    display:block;
+    min-width:60px;
+    height:60px;
+    text-align:center;
+    line-height: 70px;
+}
+
+.btn{
+    position:fixed;
+    left:0;
+    top:0;
+    background:#3e0748;
+    width:3.3rem;
+    height:3.3rem;
+    cursor:pointer;
+    transition:.5s;
+    z-index: 1;
+}
+.btn.active,
+.btn:hover{
+    background:#ea1d63;
+    border-radius:50%;
+}
+
+
+.btn__bar{
+    position:absolute;
+    display:block;
+    width:60%;
+    height:10%;
+    background: #fff;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    border-radius:.8rem;
+    transition:.2s;
+}
+
+
+.btn.active .btn__bar:nth-child(1){
+    display:none;
+}
+
+
+.btn.active .btn__bar:nth-child(2){
+    transform:rotate(43deg);
+    top:1.4rem;
+    left:.7rem;
+}
+
+.btn.active .btn__bar:nth-child(3){
+    transform: rotate(-43deg);
+    top: 1.4rem;
+    left: .7rem;
+}
+
+.btn__bar:nth-child(1){
+    top:.9rem;
+}
+.btn__bar:nth-child(2){
+    top:1.4rem;
+}
+
+.btn__bar:nth-child(3){
+    top:1.9rem;
+    
+}
+
+
+.title{
+    float:left;
+}
+
+.title h1{
+    font-size:14.375rem;
+    color:#fff;
+}
+
+
+
+
+
+@media screen and (max-width:1300px){
+    
+    
+    .title h1{
+        font-size:5rem;
+    }
+
+    .sidenav.active,
+    .sidenav:hover{
+        width:13rem;
+    }
+}
+@media screen and (max-width:778px){
+    .title h1{
+        display:none;
+    }
+}
+
+@media screen and (max-width:400px){
+    .sidenav{
+        width:0rem;
+    }
+    .sidenav.active{
+        width:100%;
+    }
+}
