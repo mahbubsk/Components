@@ -20,6 +20,18 @@ body{
     display:flex;
     align-items:center;
 }
+.timeline__title-desc{
+
+}
+
+.timeline__title{
+
+}
+.timeline__desc{
+    margin-top:1rem;
+}
+
+
 .timeline__curve-section{
     position:relative;
 }
@@ -46,7 +58,7 @@ body{
     background:#2F2F2F;
     position:absolute;
     top:-155px;
-    left:50.5%;
+    left:50%;
 }
 .timeline__middle-icon{
     margin-top:-4px;
@@ -81,80 +93,85 @@ body{
 
 .svg-odd circle:nth-child(2){
     stroke: #2F2F2F;
-    stroke-dasharray: 236px;
-    stroke-dashoffset: -100px;
+    stroke-dasharray: 233px;
+    stroke-dashoffset: -103px;
 }
 
 
 
-
-@media (max-width:1160px){
+@media (max-width:1292px){
     .timeline__curve-section::after{
-        top:-174px;
+        top:-172px;
     }
 }
 
-@media (max-width:1141px){
+@media (max-width:1160px){
     .timeline__curve-section::after{
-        top:-174px;
+        top:-192px;
+    }
+}
+
+@media (max-width:1140px){
+    .timeline__curve-section::after{
+        top:-213px;
     }
 }
 
 
 @media (max-width:1130px){
     .timeline__curve-section::after{
-        top:-195px;
+        top:-211px;
     }
 }
 
 
 @media (max-width:1013px){
     .timeline__curve-section::after{
-        top:-226px;
+        top:-244px;
     }
 }
 
 @media (max-width:984px){
     .timeline__curve-section::after{
-        top:-248px;
+        top:-264px;
     }
 }
 
 @media (max-width:980px){
     .timeline__curve-section::after{
-        top:-268px;
+        top:-285px;
     }
 }
 
 
 @media (max-width:958px){
     .timeline__curve-section::after{
-        top:-287px;
+        top:-306px;
     }
 }
 
 @media (max-width:900px){
     .timeline__curve-section::after{
-        top:-310px;
+        top:-327px;
     }
 }
 
 
 @media (max-width:884px){
     .timeline__curve-section::after{
-        top:-330px;
+        top:-347px;
     }
 }
 
 @media (max-width:840px){
     .timeline__curve-section::after{
-        top:-351px;
+        top:-370px;
     }
 }
 
 
 @media (max-width:828px){
     .timeline__curve-section::after{
-        top:-372px;
+        top:-389px;
     }
 }
